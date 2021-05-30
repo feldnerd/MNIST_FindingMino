@@ -44,4 +44,17 @@ def build_CNN(input_shape):
 
     return model
 
+# DNN
+# For decoding multi-hot labels
+def build_DNN_multi_hot_decode():
+
+    model = tf.keras.Sequential()
+    model.add(layers.Dense(512, activation = 'relu', input_shape=(10,)))
+    model.add(layers.Dense(9, activation='sigmoid'))
+
+    model.compile(optimizer='rmsprop', 
+                loss='categorical_crossentropy', 
+                metrics=['accuracy', 'mae'])
+
+    return model
 
