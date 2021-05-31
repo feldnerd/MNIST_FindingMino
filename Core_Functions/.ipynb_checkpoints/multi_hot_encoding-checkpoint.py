@@ -1,5 +1,7 @@
 import numpy as np
 
+# To do: this should be turned into a function rather tha hard-coded
+
 zero  =  np.array([1,1,1,1,1,1,1,1,1,1])
 one   =  np.array([0,1,1,1,1,1,1,1,1,1])
 two   =  np.array([0,0,1,1,1,1,1,1,1,1])
